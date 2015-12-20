@@ -1,0 +1,7 @@
+# --cap-add SYS_PTRACE
+dock_test:
+    build: .
+    volumes:
+        - ./RPMS:/RPMS
+    command: bash
+
