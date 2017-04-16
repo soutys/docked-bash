@@ -1,6 +1,8 @@
 dock_test:
   container_name: some_dock_test
   build: .
+  ports:
+    - "8443:443"
   volumes:
     - ./RPMS:/RPMS
 #  command: bash
